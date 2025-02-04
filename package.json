@@ -1,11 +1,11 @@
 {
-  "name": "hng-task0",
+  "name": "public-api",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "Api to get github email and project git repositor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo",
     "start": "nodemon src/server.js"
   },
   "keywords": [],
