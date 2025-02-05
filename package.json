@@ -2,13 +2,13 @@
   "name": "public-api",
   "version": "1.0.0",
   "type": "module",
-  "description": "Api to get github email and project git repositor",
+  "description": "Api to get github email and project git repository",
   "main": "src/server.js",
   "scripts": {
     "test": "echo",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "build": "echo 'No build step required'"
+    "build": "echo 'No build step required"
   },
   "keywords": [],
   "author": "Lawal Damilare",
