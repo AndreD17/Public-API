@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Api to get github email and project git repositor",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "Lawal Damilare",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "node": "^23.7.0",
     "pino": "^9.6.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^x.x.x"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
