@@ -7,9 +7,9 @@ app.use(express());
 
 app.get('/api', (req, res) => {
     res.json({
-        email: "Damilaresammy1996@example.com",  
+        email: "Damilaresammy1996@gmail.com",  
         current_datetime: new Date().toISOString(),
-        github_repo: "https://github.com/AndreD17/HNG-TASK0" 
+        github_repo: "https://github.com/AndreD17/Public-Api" 
     });
 });
 
