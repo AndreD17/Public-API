@@ -1,11 +1,16 @@
 import express from 'express';
+import pino from 'pino';
 
 const app = express();
+const logger = pino();
+
 
 app.use(express());
 
 
+
 app.get('/api', (req, res) => {
+    logger.info('The Public-Api is successfully logged in')
     res.json({
         email: "Damilaresammy1996@gmail.com",  
         current_datetime: new Date().toISOString(),
