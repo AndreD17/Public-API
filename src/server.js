@@ -1,5 +1,6 @@
 import express from 'express';
 import pino from 'pino';
+import validator from 'validator';
 
 const app = express();
 const logger = pino();
@@ -9,12 +10,19 @@ app.use(express());
 
 
 
+const email = "Damilaresammy1996@gmail.com"; // Replace with dynamic input
+
 app.get('/api', (req, res) => {
-    logger.info('The Public-Api is successfully logged in')
+    if (!validator.isEmail(email)) {
+        return res.status(400).json({ error: "Invalid email format" });
+    } 
+
+    logger.info('The Public-Api is successfully logged in');
+
     res.json({
-        email: "Damilaresammy1996@gmail.com",  
+        email: email,
         current_datetime: new Date().toISOString(),
-        github_repo: "https://github.com/AndreD17/Public-Api" 
+        github_url: "https://github.com/AndreD16/Public-Api"
     });
 });
 
